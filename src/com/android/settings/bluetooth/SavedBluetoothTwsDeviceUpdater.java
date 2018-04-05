@@ -75,6 +75,15 @@ public class SavedBluetoothTwsDeviceUpdater extends BluetoothDeviceUpdater {
     }
 
     @Override
+    public void onConnectionStateChanged(CachedBluetoothDevice cachedDevice, int state) {
+        if (state == BluetoothAdapter.STATE_CONNECTED) {
+            removePreference(cachedDevice);
+        } else if (state == BluetoothAdapter.STATE_DISCONNECTED) {
+            addPreference(cachedDevice);
+        }
+    }
+
+    @Override
     public boolean isFilterMatched(CachedBluetoothDevice cachedDevice) {
         final BluetoothDevice device = cachedDevice.getDevice();
         return device.getBondState() == BluetoothDevice.BOND_BONDED &&
