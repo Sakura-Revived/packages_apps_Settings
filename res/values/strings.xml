@@ -11463,8 +11463,5 @@
     <!-- Strings for Dialog connect button -->
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
 
-   <!-- QS blur -->
-    <string name="blur_quicksettings">Blur behind quick settings (beta)</string>
-    <string name="blur_quicksettings_subtitle">blurs darkened background behind quick settings</string>
 
 </resources>
