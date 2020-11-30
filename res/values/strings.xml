@@ -12237,4 +12237,7 @@
     <string name="bluetooth_connect_access_dialog_negative">Don\u2019t connect</string>
     <!-- Strings for Dialog connect button -->
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
+
+    <!-- Sakura maintainer -->
+    <string name="maintainer">Device Maintainer</string>
 </resources>
